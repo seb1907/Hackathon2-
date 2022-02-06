@@ -1,0 +1,51 @@
+
+
+
+*{
+    margin: 0;   
+}
+body{
+    display: flex;
+    justify-content: space-between;
+}
+.main_left{
+    width: 25vw;
+    background-color: rgb(61, 58, 58);
+    height: 100vh;
+}
+.main_right{
+    width: 75vw;
+}
+.menu1{
+    text-align: center;
+    padding-top: 1vh;
+    color: rgb(247, 244, 241);
+    padding-top: 3vh;
+    font-size: 1.1rem;
+}
+.menu1:hover {
+    transform: scale(1.2);
+    transition: .8s;
+    cursor: pointer;
+}
+
+.menu{
+   
+    padding-top: 1vh;
+    color: rgb(143, 134, 125);
+    padding-left:4vw;
+    padding-top: 3vh;
+    font-size: 1.5rem;   
+}
+#logo{
+    background-color: rgb(199, 199, 219);
+    background-size: 2vh;
+    height: 3vh;
+    text-align: center;
+    padding-top: 1vh;   
+    
+    font-family: 'Roboto Condensed', sans-serif;
+}
+#main_menu{
+   padding-right: 1vw;
+}

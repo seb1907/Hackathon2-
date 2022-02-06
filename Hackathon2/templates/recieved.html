@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Stock Management</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/static/main.css">
+
+  </head>
+  <body>
+      <div class="main_left">
+          <div id='logo'>Management System</div>
+          <div class='menu'  id='main_menu'>Menu</div>
+          <div class='menu1' id='recieved'><i class="fas fa-truck fa-1x"> </i>   Recieved Products</div>
+          <div class='menu1' id='withdrawn'><i class="fas fa-utensils"> </i>   Withdrawn Products</div>
+          <div class='menu1' id='update'><i class="fas fa-arrow-circle-up"></i> Stock Update</div>
+          <div class='menu'  id='maintenance'>Maintenance</div>
+          <div class='menu1' id='supp_list'><i class="fas fa-truck-moving"></i> Suppliers List</div>
+          <div class='menu1' id='user_list'><i class="fas fa-users"></i> Users List</div>
+          <div class='menu1' id='todo_list'><i class="fas fa-tasks"></i> To Do List</div>
+          
+
+      </div>
+      <div class="main_right">
+
+      </div>
+    
+	<script src="{{url_for('static', filename='script.js')}}"></script>
+  </body>
+</html>
