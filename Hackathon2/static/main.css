@@ -7,15 +7,14 @@
 body{
     display: flex;
     justify-content: space-between;
+    clear:both;
 }
 .main_left{
     width: 25vw;
     background-color: rgb(61, 58, 58);
     height: 100vh;
 }
-.main_right{
-    width: 75vw;
-}
+
 .menu1{
     text-align: center;
     padding-top: 1vh;
@@ -48,4 +47,20 @@ body{
 }
 #main_menu{
    padding-right: 1vw;
+}
+.main_right{
+    background-color: black; /*test color not working*/
+    width: 75vw;
+    height: 100vh; 
+}
+.header{
+    display: flex;  /*not working*/
+   flex-direction: row;
+ 
+  
+}
+.header_right{
+    display: flex;  /*not working*/
+    justify-content: space-evenly;
+   
 }

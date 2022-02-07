@@ -14,7 +14,7 @@
       <div class="main_left">
           <div id='logo'>Management System</div>
           <div class='menu'  id='main_menu'>Menu</div>
-          <div class='menu1' id='recieved'><i class="fas fa-truck fa-1x"> </i>   Recieved Products</div>
+          <div type="submit" method="POST" action="/result" class='menu1' id='recieved'><i class="fas fa-truck fa-1x"> </i>   Recieved Products</div>
           <div class='menu1' id='withdrawn'><i class="fas fa-utensils"> </i>   Withdrawn Products</div>
           <div class='menu1' id='update'><i class="fas fa-arrow-circle-up"></i> Stock Update</div>
           <div class='menu'  id='maintenance'>Maintenance</div>
@@ -24,10 +24,23 @@
           
 
       </div>
-      <div class="main_right">
+      <div class="main_right">   <!--not working, main right-->
+        <div class="header">
+          <div class="header_left">
+            <input placeholder="some text" type="text">
+          </div>
+          <div class="header_right">
+            <div class="login">
+              <i class="far fa-user"></i> login
+            </div>
+            <div class="display">
+              <input placeholder="some text" type="text">
+            </div>
+          </div>
+        </div>
 
       </div>
     
-	<script src="{{url_for('static', filename='script.js')}}"></script>
+	<script src="{{url_for('static', filename='script1.js')}}"></script>
   </body>
 </html>
