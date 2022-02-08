@@ -7,15 +7,14 @@
 body{
     display: flex;
     justify-content: space-between;
+    clear:both;
 }
 .main_left{
     width: 25vw;
     background-color: rgb(61, 58, 58);
     height: 100vh;
 }
-.main_right{
-    width: 75vw;
-}
+
 .menu1{
     text-align: center;
     padding-top: 1vh;
@@ -48,4 +47,56 @@ body{
 }
 #main_menu{
    padding-right: 1vw;
+}
+.main_right{
+    background-color: rgb(230, 222, 222); /*test color not working*/
+    width: 75vw;
+    height: 100vh; 
+}
+.header{
+    display: flex;  
+   justify-content: space-between;
+ 
+  
+}
+.header_left{
+    padding-top: 1vh;
+    padding-left: 2vw;
+}
+.header_right{
+    display: flex;
+    padding-right: 3vw;  
+}
+.display{
+    padding-top: 1vh;
+}
+.login{
+    padding-right: 4vw;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-top:1.9vh;
+    font-size: medium;
+    
+}
+.login:hover{
+    opacity: 0.95;
+    transform: scale(1.2);
+    transition: 0.7s;
+    cursor: pointer;
+
+}
+a:link{
+    text-decoration: none;
+    color: rgb(172, 172, 172);
+}
+.inp{
+    width: 12vw;
+    height:3.5vh;
+    text-align: center;
+    border: none;
+    border-radius: 0.7rem;
+}
+.inp::placeholder{
+    padding-right: 1vw;
+    color: rgb(54, 74, 75);
+    opacity: .4;
 }

@@ -8,13 +8,13 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <link rel="stylesheet" href="/static/main.css">
-
+    <!-- <link ... href="{{ url_for('static', filename='main.css') }}" /> -->
   </head>
   <body>
       <div class="main_left">
           <div id='logo'>Management System</div>
           <div class='menu'  id='main_menu'>Menu</div>
-          <div class='menu1' id='recieved'><i class="fas fa-truck fa-1x"> </i>   Recieved Products</div>
+          <div type="submit" method="POST" action="/result" class='menu1' id='recieved'><i class="fas fa-truck fa-1x"> </i>   Recieved Products</div>
           <div class='menu1' id='withdrawn'><i class="fas fa-utensils"> </i>   Withdrawn Products</div>
           <div class='menu1' id='update'><i class="fas fa-arrow-circle-up"></i> Stock Update</div>
           <div class='menu'  id='maintenance'>Maintenance</div>
@@ -24,10 +24,24 @@
           
 
       </div>
-      <div class="main_right">
+      <div class="main_right">   
+        <div class="header">
+          <div class="header_left">
+            <input class="inp" id="inp1" placeholder="some text" type="text">
+          </div>
+          <div class="header_right">
+            <div class="login" id = 'logIn'>
+              <i class="far fa-user"></i><a style="color:black;" href="login">login</a>
+            </div>
+            <div class="display">
+              <input class="inp" id="inp2" placeholder="some text" type="text">
+            </div>
+          </div>
+        </div>
 
       </div>
     
-	<script src="{{url_for('static', filename='script.js')}}"></script>
+	<script type="module" src="{{url_for('static', filename='script1.js')}}"></script>
+  <!-- <script type="module" src="{{url_for('static', filename='login.js')}}"></script> -->
   </body>
 </html>
