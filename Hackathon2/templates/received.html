@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="refresh" content="30"/>
+
     <title>Stock Management</title>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -27,20 +29,61 @@
       <div class="main_right">   
         <div class="header">
           <div class="header_left">
-            <input class="inp" id="inp1" placeholder="some text" type="text">
+            <input class="inp" id="inp1" placeholder="Received Products" type="text">
           </div>
           <div class="header_right">
             <div class="login" id = 'logIn'>
               <i class="far fa-user"></i><a style="color:black;" href="login">login</a>
             </div>
             <div class="display">
-              <input class="inp" id="inp2" placeholder="some text" type="text">
+              <input class="inp" id="inp2" placeholder="User" type="text">
             </div>
           </div>
         </div>
-        <div class="button"
+        <div class='line'>
+          <div class="line1"></div>
+        </div>
+        <div class="button">
+          <div class="button1" id="addButton" >Add</div>
+          <div class="button1" id="removeButton" >Erase</div>
+          <div class="button1" id="getButton">Get</div>
+        </div>
+        <div class="grid_container">
+        <div id="allCells" class="parent">
+          <iv id="cell1"class="cell "></iv>
+          <div id='cell2'class="cell "></div>
+          <div id="cell3"class="cell "></div>
+          <div id="cell4"class="cell "></div>
+          <div id="cell5"class="cell "></div>
+          <div id="cell6"class="cell "></div>
+          <div id="cell7"class="cell"></div>
+          <div id="cell8"class="cell "></div>
+          <div id="cell9"class="cell "></div>
+          <div id="cell10"class="cell "></div>
+          <div id="cell11"class="cell "></div>
+          <div id="cell12"class="cell "></div>
+          <div id="cell13"class="cell "></div>
+          <div id="cell14"class="cell "></div>
+          <div id="cell15"class="cell "></div>
+          <div id="cell16"class="cell "></div>
+          <div id="cell17"class="cell "></div>
+          <div id="cell18"class="cell "></div>
+          <div id="cell19"class="cell "></div>
+          <div id="cell20"class="cell "></div>
+          <div id="cell21"class="cell "></div>
+          <div id="cell22"class="cell "></div>
+          <div id="cell23"class="cell "></div>
+          <div id="cell24"class="cell "></div>
+          <div id="cell25"class="cell "></div>
+          <div id="cell26"class="cell "></div>
+          <div id="cell27"class="cell "></div>
+          <div id="cell28"class="cell "></div>
+          <div id="cell29"class="cell "></div>
+          <div id="cell30"class="cell "></div>     
+        </div>
+        </div>
 
-      
+      </div>
     
 	<script type="module" src="{{url_for('static', filename='script1.js')}}"></script>
   <script type="module" src="{{url_for('static', filename='login.js')}}"></script>
