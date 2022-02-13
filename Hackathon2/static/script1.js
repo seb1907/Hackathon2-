@@ -31,11 +31,18 @@ function todoList() {
 function Add() {
     console.log('add selected')
     createElement()
+    
 }
 function eraseAll(){
     console.log('erase all selected')
-    var remv = document.getElementById('theCell')
-        remv.remove()
+   let pt = prompt('Are you sure you want to erase all ? yes or no?')
+    if (pt == 'yes'){
+    localStorage.clear()
+    document.querySelectorAll('#cell').forEach(e => e.remove());
+    }
+  
+    // document.getElementById('theCell').remove()
+    // document.querySelectorAll('#cell').forEach(e => e.remove());
 
     
 }
@@ -52,9 +59,9 @@ let erase2   = document.getElementById('removeButton')
 
 received.onclick = receivedProducts
 withdrawn.onclick = withdrawnProducts
-update.onclick = stockUpdate
+// update.onclick = stockUpdate
 supliers.onclick= suppliers
-userlist.onclick = usersList
+// userlist.onclick = usersList
 todolist.onclick = todoList
 add.onclick = Add
 erase2.onclick = eraseAll
@@ -66,6 +73,9 @@ function createElement() {
     box = document.createElement('div');
     box.setAttribute('class', 'add_item');
     box.setAttribute('id', 'theCell');
+    // let erase =  document.createElement('button');
+    // erase.innerText = "Erase";
+    // box.appendChild(erase)
   
     isItem()
     itemsNumber()
@@ -215,7 +225,7 @@ function createElement() {
     }
     else if(document.getElementById('cell27').innerHTML.trim().length == 0) {
         let cell27= document.getElementById('cell27')
-        cel27.appendChild(box)  
+        cell27.appendChild(box)  
         localStorage.setItem('test27', box.innerHTML)
 
     }
@@ -238,6 +248,12 @@ function createElement() {
 
     }
 }
+
+// function countingItems(){
+//     document.querySelectorAll('.ADD_IT').addEventListener('click',function(){
+//           prompt('How many items are you withdrawing?')
+//       })
+// }
     // cell.appendChild(box)
     // if(cell.appendChild(box) == true){
     //     let cell1 = document.getElementById('cell2')
@@ -334,14 +350,78 @@ function getAll(){
 
    
 }
+if(location.href == "http://127.0.0.1:5001/withdrawn"){
+    
+ window.onload = getAll();
+ 
+}
+else if (location.href == "http://127.0.0.1:5001/result"){
+    window.onload = getAllReceived()
+    
+}
 
 
 
+function getAllReceived(){
+     let cell1= document.getElementById('cell1').innerHTML = localStorage.getItem('test1')
+    let cell3 = document.getElementById('cell2').innerHTML = localStorage.getItem('test2')
+    let cell4 = document.getElementById('cell3').innerHTML = localStorage.getItem('test3')
+    let cell5 = document.getElementById('cell4').innerHTML = localStorage.getItem('test4')
+    let cell6 = document.getElementById('cell5').innerHTML = localStorage.getItem('test5')
+    let cell7 = document.getElementById('cell6').innerHTML = localStorage.getItem('test6')
+    let cell8 = document.getElementById('cell7').innerHTML = localStorage.getItem('test7')
+    let cell9= document.getElementById('cell8').innerHTML = localStorage.getItem('test8')
+    let cell10= document.getElementById('cell9').innerHTML = localStorage.getItem('test9')
+    let cell40 = document.getElementById('cell10').innerHTML = localStorage.getItem('test10')
+    let cell41 = document.getElementById('cell11').innerHTML = localStorage.getItem('test11')
+    let cell42 = document.getElementById('cell12').innerHTML = localStorage.getItem('test12')
+    let cell43 = document.getElementById('cell13').innerHTML = localStorage.getItem('test13')
+    let cell44 = document.getElementById('cell14').innerHTML = localStorage.getItem('test14')
+    let cell45 = document.getElementById('cell15').innerHTML = localStorage.getItem('test15')
+    let cell46 = document.getElementById('cell16').innerHTML = localStorage.getItem('test16')
+    let cell47 = document.getElementById('cell17').innerHTML = localStorage.getItem('test17')
+    let cell48 = document.getElementById('cell18').innerHTML = localStorage.getItem('test18')
+    let cell49 = document.getElementById('cell19').innerHTML = localStorage.getItem('test19')
+    let cell50 = document.getElementById('cell20').innerHTML = localStorage.getItem('test20')
+    let cell51 = document.getElementById('cell21').innerHTML = localStorage.getItem('test21')
+    let cell52 = document.getElementById('cell22').innerHTML = localStorage.getItem('test22')
+    let cell53 = document.getElementById('cell23').innerHTML = localStorage.getItem('test23')
+    let cell54 = document.getElementById('cell24').innerHTML = localStorage.getItem('test24')
+    let cell55 = document.getElementById('cell25').innerHTML = localStorage.getItem('test25')
+    let cell56 = document.getElementById('cell26').innerHTML = localStorage.getItem('test26')
+    let cell57 = document.getElementById('cell27').innerHTML = localStorage.getItem('test27')
+    let cell58 = document.getElementById('cell28').innerHTML = localStorage.getItem('test28')
+    let cell59 = document.getElementById('cell29').innerHTML = localStorage.getItem('test29')
+    let cell60 = document.getElementById('cell30').innerHTML = localStorage.getItem('test30')
 
+}
+// function itemChange(){
+//     document.querySelectorAll('#cell1').forEach(e => e.remove());
+//  }
+// let change = document.getElementById('cell1').addEventListener('click',function itemChange(){
+//     document.querySelectorAll('#cell1').forEach(e => e.remove());
 
+// function remvItem() {
+// let egg = document.getElementById('cell1')
+// console.log(localStorage.removeItem('test1'))
+// }
+// let x;
+// let clean = document.getElementById('cell1');
+// clean.onclick = x
+// if (x == true) {
+//   let x =  prompt('Are you sure you want to erase the item? yes or no?')
+//   if (x == 'yes'){
+//        remvItem
+//   }
+//   else {
+//       alert('ok')
+//   }
+// }
+// clean.onclick = remvItem
 
-
-
+// function change(){
+//    let f = document.querySelectorAll('.cell').onclick 
+// }
 
 
 
