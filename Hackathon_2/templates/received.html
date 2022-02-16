@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="refresh" content="30"/>
+
+    <title>Stock Management</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/static/main.css">
+    <!-- <link ... href="{{ url_for('static', filename='main.css') }}" /> -->
+  </head>
+  <body>
+      <div class="main_left">
+          <div id='logo'>Management System</div>
+          <div  class='menu'  id='main_menu'>Menu</div>
+          <div  class='menu1' id='recieved'><a style="color: rgb(247, 244, 241)" href="result"><i class="fas fa-truck fa-1x"> </i>   Products</a></div>
+          <!-- <div  class='menu1' id='withdrawn'><a style="color: rgb(247, 244, 241)" href="withdrawn"><i class="fas fa-utensils"> </i>   Withdrawn Products</a></div> -->
+          <!-- <div  class='menu1' id='update'><a style="color: rgb(247, 244, 241);" href="stock"><i class="fas fa-arrow-circle-up"></i> Stock Update</a></div> -->
+          <div  class='menu'  id='maintenance'>Maintenance</div>
+          <div  class='menu1' id='supp_list'><a style="color: rgb(247, 244, 241);" href="suppliers"><i class="fas fa-truck-moving"></i> Suppliers List</a></div>
+          <!-- <div  class='menu1' id='user_list'><a style="color: rgb(247, 244, 241);" href="users"><i class="fas fa-users"></i> Users List</a></div> -->
+          <div  class='menu1' id='todo_list'><a style="color: rgb(247, 244, 241);"href="Todo"><i class="fas fa-tasks"></i> To Do List</a></div>
+          
+
+      </div>
+      <div class="main_right">   
+        <div class="header">
+          <div class="header_left">
+            <input class="inp" id="inp1" placeholder=" Products" type="text">
+          </div>
+          <div class="header_right">
+            <div class="login" id = 'logIn'>
+              <i class="far fa-user"></i><a style="color:black;" href="login">login</a>
+            </div>
+            <div class="display">
+              <input class="inp" id="inp2" placeholder="User" type="text">
+            </div>
+          </div>
+        </div>
+        <div class='line'>
+          <div class="line1"></div>
+        </div>
+        <div class="button">
+          <div class="button1" id="addButton" >Add</div>
+          <div class="button1" id="removeButton" >Erase</div>
+          <!-- <div class="button1" id="getButton">Get</div> -->
+        </div>
+        <div class="grid_container">
+        <div id="allCells" class="parent">
+          <div id="cell1"class="cell "></div>
+          <div id='cell2'class="cell "></div>
+          <div id="cell3"class="cell "></div>
+          <div id="cell4"class="cell "></div>
+          <div id="cell5"class="cell "></div>
+          <div id="cell6"class="cell "></div>
+          <div id="cell7"class="cell"></div>
+          <div id="cell8"class="cell "></div>
+          <div id="cell9"class="cell "></div>
+          <div id="cell10"class="cell "></div>
+          <div id="cell11"class="cell "></div>
+          <div id="cell12"class="cell "></div>
+          <div id="cell13"class="cell "></div>
+          <div id="cell14"class="cell "></div>
+          <div id="cell15"class="cell "></div>
+          <div id="cell16"class="cell "></div>
+          <div id="cell17"class="cell "></div>
+          <div id="cell18"class="cell "></div>
+          <div id="cell19"class="cell "></div>
+          <div id="cell20"class="cell "></div>
+          <div id="cell21"class="cell "></div>
+          <div id="cell22"class="cell "></div>
+          <div id="cell23"class="cell "></div>
+          <div id="cell24"class="cell "></div>
+          <div id="cell25"class="cell "></div>
+          <div id="cell26"class="cell "></div>
+          <div id="cell27"class="cell "></div>
+          <div id="cell28"class="cell "></div>
+          <div id="cell29"class="cell "></div>
+          <div id="cell30"class="cell "></div>     
+        </div>
+        </div>
+
+      </div>
+    
+	<script type="module" src="{{url_for('static', filename='script1.js')}}"></script>
+  <!-- <script type="module" src="{{url_for('static', filename='login.js')}}"></script> -->
+  </body>
+</html>
